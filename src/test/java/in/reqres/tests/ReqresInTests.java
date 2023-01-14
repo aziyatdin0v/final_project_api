@@ -18,7 +18,6 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.jupiter.api.Assertions.*;
 
-//@Layer("api")
 @Owner("aziyatdinov")
 @Feature("API test")
 @Story("ReqresIn")
