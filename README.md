@@ -1,16 +1,16 @@
 # Дипломный проект по тестированию API для [reqres.in](https://reqres.in/)
 
-## :open_book: Содержание:
+## :open_book: Содержание
 
 - [Технологии и инструменты](#gear-технологии-и-инструменты)
-- [Реализованныe проверки](#heavy_check_mark-реализованные-проверки)
+- [Реализованныe проверки](#heavy_check_mark-тест-кейсы)
 - [Запуск тестов из терминала](#computer-запуск-тестов-из-терминала)
 - [Запуск тестов в Jenkins](#-запуск-тестов-в-jenkins)
 - [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-Allure-report)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
-- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram)
 
-## :gear: Технологии, используемые в данном проекте
+## :gear: Технологии и инструменты
 
 <p align="left">
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
@@ -24,7 +24,7 @@
 <a href="https://qameta.io/"><img src="images\logo\Allure_TO.svg" width="50" height="50" alt="Allure_TO" title="Allure_TO"></a>
 </p>
 
-## :heavy_check_mark: Реализованные проверки:
+## :heavy_check_mark: Тест кейсы
 
 - Получение списка пользователей
 - Проверка наличия пользователя в базе
@@ -50,7 +50,7 @@ gradle clean test
 </p>
 
 После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
-значок *Allure Report*, кликнув по которому, откроется страница с сформированным html-отчетом.
+значок *Allure Report* и *Allure TestOps* кликнув по которому, откроется страница с сформированным html-отчетом и тестовой документацией.
 
 ## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/015_aziyatdinov_final_api/4/allure/)
 
@@ -62,7 +62,7 @@ gradle clean test
   <img src="images/screen/jenkins_behaviors.png" alt="allure-report_1" width="900">
 </p>
 
-## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/)
+## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18313)
 
 ### Основной дашборд
 
@@ -82,7 +82,7 @@ gradle clean test
   <img src="images/screen/allure-testops-testcases.png" alt="testcase" width="900">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">

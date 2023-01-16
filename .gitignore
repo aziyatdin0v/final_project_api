@@ -39,5 +39,3 @@ target/
 /gradlew.bat
 .todo
 *.properties
-/notifications/draft.txt
-/notifications/telegram.json
